@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JetSet</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="logo">JetSet</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+    <div class="search-bar">
+      <input type="text" id="search-input" placeholder="Enter a destination or keyword">
+      <button id="search-btn">Search</button>
+      <button id="clear-btn" class="clear-btn">Clear</button>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Home Section -->
+    <section id="home">
+        <div class="section-content">
+          <h1>Explore Your Dream Destinations</h1>
+          <p>It encourages exploration of unfamiliar territories, embracing diverse cultures and landscapes…</p>
+        </div>
+        <div id="results" class="results"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="section-content">
+      <h1>About Us</h1>
+      <p>Welcome to JetSet! We’re passionate about providing curated travel recommendations that spark adventure and wonder.</p>
+      <h2>Our Team</h2>
+      <div class="results">
+        <div class="card">
+          <div class="info">
+            <h3>Lance Jones</h3>
+            <p>CEO</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="info">
+            <h3>Celina Thomas</h3>
+            <p>Tour Lead</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="info">
+            <h3>Mike Tyson</h3>
+            <p>Delivery Head</p>
+          </div>
+      </div>
+    </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+     <div class="section-content">
+      <h1>Contact Us</h1>
+      <form id="contact-form">
+        <label>
+          Name<br>
+          <input type="text" name="name" required>
+        </label><br><br>
+        <label>
+          Email<br>
+          <input type="email" name="email" required>
+        </label><br><br>
+        <label>
+          Message<br>
+          <textarea name="message" rows="5" required></textarea>
+        </label><br><br>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    </section>
+  </main>
+
+  <script src="travel_recommendation.js"></script>
+  
+  <footer>
+    <div id="tx-time"></div>
+  </footer>
+</body>
+</html>
